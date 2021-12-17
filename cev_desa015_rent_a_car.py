@@ -16,10 +16,13 @@ while True:
     segue = ' '
 
     km_rodados    = decima('Digite a quilometragem rodada:          ')
-    dias_locados  = natura('Digite o número de dias:                  ')
+    dias_locados  = natura('Digite o número de dias locados:                  ')
 
-    total_km   = km_rodados * 0.15
-    total_dias = dias_locados * 80
+    preco_km_rodado = decima('Digite o custo por quilômetro rodado:   ')
+    preco_diaria = decima('Digite o custo por dia locado:     ')
+
+    total_km   = km_rodados * preco_km_rodado
+    total_dias = dias_locados * preco_diaria
 
     print()
 
