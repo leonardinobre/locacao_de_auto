@@ -18,8 +18,12 @@ while True:
     km_rodados    = decima('Digite a quilometragem rodada:          ')
     dias_locados  = natura('Digite o número de dias locados:                  ')
 
+    print()
+
     preco_km_rodado = decima('Digite o custo por quilômetro rodado:   ')
     preco_diaria = decima('Digite o custo por dia locado:     ')
+
+    print()
 
     total_km   = km_rodados * preco_km_rodado
     total_dias = dias_locados * preco_diaria
@@ -37,4 +41,5 @@ while True:
 
     if segue in 'N':
         encerra(80, 'Encerrando...')
+        print('On github.com visit leonardinobre')
         break
